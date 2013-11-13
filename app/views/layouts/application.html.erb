@@ -2,12 +2,19 @@
 <html>
 <head>
   <title>Rollcall</title>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 </head>
 <body>
+<h1>
+<%= link_to("Courses", courses_url) %>
+<%= link_to("Students", students_url) %>
+<%= link_to("Meetings", meetings_url) %>
+<%= link_to("Attendances", attendances_url) %>
+</h1>
+
 
 <%= yield %>
 
